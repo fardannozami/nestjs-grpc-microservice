@@ -17,6 +17,7 @@ export class ProductController implements OnModuleInit {
 
     @Get()
     async getProducts() {
+        console.log("product controller on api gateway")
         return this.productService.getProducts({productId: 1});
     }
 }
